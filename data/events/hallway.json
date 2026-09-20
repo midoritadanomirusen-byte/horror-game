@@ -1,0 +1,1 @@
+{ "events": [{ "id": "first_presence", "requires": ["photo_seen"], "action": "mio_glimpse" }] }

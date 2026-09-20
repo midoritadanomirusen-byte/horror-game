@@ -1,0 +1,6 @@
+{
+  "events": [
+    { "id": "enter_house", "once": true, "action": "show_arrival_dialogue" },
+    { "id": "inspect_old_photo", "once": true, "action": "advance_exploration" }
+  ]
+}

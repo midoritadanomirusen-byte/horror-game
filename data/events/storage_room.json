@@ -1,0 +1,1 @@
+{ "events": [{ "id": "find_cassette", "once": true, "action": "give_cassette" }] }
