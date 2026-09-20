@@ -1,0 +1,15 @@
+#mobile-controls { display: none; position: absolute; inset: 0; pointer-events: none; }
+#joystick-zone { position: absolute; left: 16px; bottom: 18px; width: 150px; height: 150px; pointer-events: auto; touch-action: none; }
+#joystick-base { position: absolute; left: 13px; bottom: 13px; width: 118px; height: 118px; border-radius: 50%; border: 1px solid rgba(255,255,255,.24); background: rgba(10,10,10,.25); }
+#joystick-knob { position: absolute; width: 48px; height: 48px; left: 35px; top: 35px; border-radius: 50%; background: rgba(255,255,255,.25); border: 1px solid rgba(255,255,255,.35); }
+#look-zone { position: absolute; right: 0; top: 72px; bottom: 0; width: 62%; pointer-events: auto; touch-action: none; }
+.mobile-actions { position: absolute; right: 16px; bottom: 92px; display: flex; gap: 10px; pointer-events: auto; }
+
+@media (pointer: coarse), (max-width: 900px) {
+  #mobile-controls { display: block; }
+  .flashlight-panel { bottom: 168px; right: 12px; width: 210px; }
+  .hud-top-left { left: 12px; top: 12px; }
+  .hud-top-right { right: 12px; top: 12px; }
+  #crosshair { width: 10px; height: 10px; }
+  #dialogue-box { bottom: 184px; }
+}

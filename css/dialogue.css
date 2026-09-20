@@ -1,0 +1,13 @@
+#dialogue-box {
+  position: absolute;
+  left: 50%; bottom: 28px;
+  transform: translateX(-50%);
+  z-index: 30;
+  width: min(760px, calc(100% - 32px));
+  padding: 18px;
+  background: rgba(5,6,6,.9);
+  border: 1px solid rgba(255,255,255,.18);
+}
+#speaker-name { margin-bottom: 8px; font-size: 13px; color: #adb7ae; }
+#dialogue-text { min-height: 2.4em; line-height: 1.7; }
+#dialogue-next { float: right; margin-top: 14px; min-width: 76px; min-height: 38px; background: #252a26; color: #fff; border: 1px solid #5b625c; }

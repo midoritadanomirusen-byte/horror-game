@@ -1,0 +1,48 @@
+#hud { position: absolute; inset: 0; pointer-events: none; z-index: 10; }
+#hud > * { pointer-events: auto; }
+
+#crosshair {
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 8px; height: 8px;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(255,255,255,.72);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+#interaction-hint {
+  position: absolute;
+  left: 50%; top: calc(50% + 28px);
+  transform: translateX(-50%);
+  min-width: 120px;
+  text-align: center;
+  font-size: 13px;
+  text-shadow: 0 1px 4px #000;
+  pointer-events: none;
+}
+
+.hud-top-left { position: absolute; left: 18px; top: 18px; max-width: 320px; pointer-events: none !important; }
+.objective-label { font-size: 11px; color: #9ca39d; letter-spacing: .14em; }
+#objective-text { margin-top: 4px; font-size: 14px; text-shadow: 0 1px 4px #000; }
+
+.hud-top-right { position: absolute; right: 18px; top: 18px; }
+.hud-button, .mobile-actions button {
+  min-height: 44px;
+  min-width: 84px;
+  border: 1px solid rgba(255,255,255,.28);
+  background: rgba(10,12,11,.72);
+  color: #f4f5f2;
+}
+
+.flashlight-panel {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  width: min(280px, calc(100% - 36px));
+  padding: 10px 12px;
+  background: rgba(7,8,8,.72);
+  border: 1px solid rgba(255,255,255,.13);
+}
+.flashlight-panel label { display: block; font-size: 12px; margin-bottom: 6px; color: #d8dad6; }
+.flashlight-panel input { width: 100%; }
