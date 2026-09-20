@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+  <meta name="theme-color" content="#050607" />
+  <title>灯りを向けるな - Prototype</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/hud.css" />
+  <link rel="stylesheet" href="./css/dialogue.css" />
+  <link rel="stylesheet" href="./css/mobile.css" />
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="game-root">
+    <canvas id="game-canvas" aria-label="3D horror game canvas"></canvas>
+
+    <section id="title-screen" class="screen-layer visible" aria-label="タイトル画面">
+      <div class="title-card">
+        <p class="eyebrow">FIRST PERSON HORROR / TEST BUILD</p>
+        <h1>灯りを向けるな</h1>
+        <p class="subtitle">玄関から始まる、古い平屋の探索プロトタイプ</p>
+        <button id="start-button" type="button">探索を始める</button>
+        <p class="controls-note">PC: WASD / マウス / E / Shift　　スマホ: 左スティック / 右スワイプ / 調べる</p>
+      </div>
+    </section>
+
+    <div id="hud" class="hidden" aria-hidden="true">
+      <div id="crosshair" aria-hidden="true"></div>
+      <div id="interaction-hint" role="status" aria-live="polite"></div>
+
+      <div class="hud-top-left">
+        <div class="objective-label">現在の目的</div>
+        <div id="objective-text">家の中を調べる</div>
+      </div>
+
+      <div class="hud-top-right">
+        <button id="flashlight-button" class="hud-button" type="button">懐中電灯 ON</button>
+      </div>
+
+      <div class="flashlight-panel">
+        <label for="flashlight-strength">懐中電灯の強さ <span id="flashlight-value">65</span>%</label>
+        <input id="flashlight-strength" type="range" min="0" max="100" value="65" step="1" />
+      </div>
+
+      <div id="mobile-controls" aria-label="スマホ操作">
+        <div id="joystick-zone">
+          <div id="joystick-base"><div id="joystick-knob"></div></div>
+        </div>
+        <div id="look-zone" aria-label="視点操作エリア"></div>
+        <div class="mobile-actions">
+          <button id="run-button" type="button">走る</button>
+          <button id="interact-button" type="button">調べる</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="dialogue-box" class="hidden" role="dialog" aria-modal="false" aria-live="polite">
+      <div id="speaker-name"></div>
+      <div id="dialogue-text"></div>
+      <button id="dialogue-next" type="button">次へ</button>
+    </div>
+
+    <div id="status-message" role="status" aria-live="polite"></div>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
