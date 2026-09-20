@@ -1,0 +1,10 @@
+{
+  "character": "美緒",
+  "voicePreset": { "rate": 0.82, "pitch": 1.35, "volume": 0.72 },
+  "lines": {
+    "whisper_01": "……出して。",
+    "whisper_02": "また、見ないふりするの？",
+    "chase_01": "どこ行くの？",
+    "chase_02": "見つけた。"
+  }
+}
