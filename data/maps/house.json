@@ -1,0 +1,7 @@
+{
+  "model": "../../assets/models/house/house_shell_one_story.glb",
+  "start": { "x": 0, "y": 1.62, "z": -4.1 },
+  "rooms": [
+    "玄関", "廊下", "居間", "台所", "浴室", "物置", "子ども部屋", "開かない部屋"
+  ]
+}
