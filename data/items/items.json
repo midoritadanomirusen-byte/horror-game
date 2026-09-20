@@ -1,0 +1,7 @@
+{
+  "items": [
+    { "id": "old_key", "name": "古い鍵", "model": "key_small.glb" },
+    { "id": "diary", "name": "美緒の日記", "model": "diary_book.glb" },
+    { "id": "cassette", "name": "古いカセットテープ", "model": "cassette_tape.glb" }
+  ]
+}
