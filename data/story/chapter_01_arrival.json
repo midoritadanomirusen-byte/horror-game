@@ -1,0 +1,7 @@
+{
+  "id": "chapter_01_arrival",
+  "title": "帰宅",
+  "summary": "直人が夜の祖母宅へ入り、玄関から探索を開始する。",
+  "bgm": "bgm_02_entrance.mp3",
+  "objective": "玄関から家の中を調べる"
+}
